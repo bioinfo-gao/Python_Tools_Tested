@@ -1,6 +1,7 @@
 # debug_example.py
-
+# this is the best debugger tutorial I ever see
 import pdb
+# https://www.bilibili.com/video/BV1Vc6vYhEX3/?spm_id_from=333.788.player.switch&vd_source=9a4bc8c6c4b3f65118a7338473c15077&p=96
 
 def calculate(a, b):
     result = a + b
