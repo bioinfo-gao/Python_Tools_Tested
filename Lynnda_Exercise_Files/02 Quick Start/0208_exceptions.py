@@ -10,5 +10,5 @@ try:
         print(line, end='') # print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 except: # debugger show do NOt use bare except
     print(" Eror happended")
-#except IOError as e:
+#except IOError as e:  # A better way to catch IOError and show the error message pretty 
     # print(" Eror happended as {}".format(e))
