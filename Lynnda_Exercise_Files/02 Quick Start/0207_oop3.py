@@ -12,7 +12,7 @@ class AnimalActions:
     def quack(self): return self._doAction('quack')          # _doAction
     def feathers(self): return self._doAction('feathers')    # _doAction
 
-    def _doAction(self, action):                             # _doAction
+    def _doAction(self, action):                             # _doAction, # "_" local method start with "_", only call in class
         if action in self.strings:
             return self.strings[action]
         else:
