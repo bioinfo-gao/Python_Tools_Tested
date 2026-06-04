@@ -5,7 +5,8 @@
 
 def main():
     for n in primes():
-        if n > 100: break
+        if n > 100: 
+            break
         print(n)
 
 def isprime(n):
