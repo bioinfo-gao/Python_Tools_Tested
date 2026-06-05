@@ -4,7 +4,8 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    fh = open('lines.txt')
+    #fh = open('lines.txt')
+    fh = open('/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/lines.txt')
     for line in fh.readlines():
         print(line)
 
