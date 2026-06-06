@@ -3,22 +3,37 @@
 # This is an exercise file from Python 3 Essential Training on lynda.com
 # Copyright 2010 The BearHeart Group, LLC
 
+import os
+
+os.getcwd() # 获取当前工作目录
+
+# shell
+# cd "/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/"
+
+
+
+# 相对路径依赖工作目录：当代码使用 'lines.txt' 这样的相对路径时，Python 会在当前工作目录中查找文件，而不是在脚本所在的目录中查找。
+
+
 # any container object is iterable
 
-# cd "/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/"
-# 相对路径依赖工作目录：当代码使用 'lines.txt' 这样的相对路径时，Python 会在当前工作目录中查找文件，而不是在脚本所在的目录中查找。
+# 改变当前工作目录到指定路径
+os.chdir("/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/")
+
+# 验证是否成功切换（可选）
+print("当前工作目录:", os.getcwd())
+
 def main():
-    #fh = open('lines.txt')
-    fh = open('/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/lines.txt')
+    fh = open('lines.txt')
+    #fh = open('/home/gao/Python_Tools_Tested/Lynnda_Exercise_Files/07 Loops/lines.txt')
     for line in fh.readlines():
         print(line)
 
 if __name__ == "__main__": main()
 
 
-import os
+# import os
 
-os.getcwd() # 获取当前工作目录
 
 # def main():
 #     # Get the directory where this script is located
