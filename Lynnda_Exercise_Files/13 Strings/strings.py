@@ -4,17 +4,23 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    s = 'this is a string'
+    s = 'this is A string'
     print(s.capitalize())
     print(s.title())
     print(s.upper())
-    print(s.swapcase())
+    print(s.swapcase()) 
     print(s.find('is'))
     print(s.replace('this', 'that'))
     print(s.strip())
-    print(s.isalnum())
+    # the fllowing start with "is"
+    print(s.isalnum()) # space is not alphanumeric !
     print(s.isalpha())
     print(s.isdigit())
     print(s.isprintable())
 
-if __name__ == "__main__": main()
+
+# help(str.swapcase) # 使用 help() 函数：查看详细的功能描述。                                 ==> popup window  
+# dir(str)           # 使用 dir() 函数：列出字符串对象的所有可用方法（当你忘记具体拼写时很有用） ==> same window
+
+if __name__ == "__main__": 
+    main()
